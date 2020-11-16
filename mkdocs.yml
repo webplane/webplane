@@ -18,6 +18,9 @@ theme:
     palette:
         primary: 'white'
         accent: '#aa'
+    font:
+        text: Roboto
+        code: Roboto Mono
 
 # Disable edit uri to get a cleaner view
 edit_uri: ''
@@ -40,7 +43,11 @@ nav:
 
 
 markdown_extensions:
-    - codehilite:   # This adds the "Copy to clipboard"
-    - admonition:
+    - toc:
+        permalink: "#"
+    - markdown.extensions.admonition:
     - pymdownx.details:
     - pymdownx.superfences:
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.highlight:
