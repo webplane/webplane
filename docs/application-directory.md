@@ -1,6 +1,5 @@
 # Webplane Application Directory
 
-
 The application directory contains all the artifacts that are required by an application. Each directory at the top level represents a feature, when an application is started the webplane engine will run the initialization code associated with each feature. The content of the folder will be used as described on the feature documentation below.
 
 ## Application Features
@@ -27,6 +26,3 @@ The _http_ directory content is scanned and processed according to the following
 
 - Files with extension *.py* will be imported as Controller modules .
 - If both .html and a .py files for the same base, the python module will be imported as a Renderer module.
-
-
-

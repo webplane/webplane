@@ -1,6 +1,6 @@
 # Introduction and Installation
 
-Webplane is an open source HTTP application server for Python, it integrates some of the best Python tecnhologies like the [CherryPy] web server and the [Jinja] templating engine in order to provide a rapid web application development experience.
+Webplane is an open source HTTP application server for Python with a focus on rapid web application development and deployment. It leverages some of the best Python tecnhologies like the [CherryPy] web server and the [Jinja] templating engine.
 
 
 [CherryPy]: https://cherrypy.org/
@@ -31,7 +31,7 @@ A Linux, MacOS or Windows system with Python 3.6+, if you are new to Python you 
 
 ## Installation
 
-Webplane is avaiable from the official Python Package Index, it can be installed from the terminal with:
+Webplane is avaiable from the official Python Package Index (PIP), you can install it from the terminal:
 ```sh
 pip install webplane
 ```
