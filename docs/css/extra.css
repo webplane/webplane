@@ -1,112 +1,77 @@
-@media screen and (min-width: 768px) {
-    html, body {
-        text-rendering: optimizeLegibility;
-    }
-}
 
-.bs-sidebar .nav > li > a:hover,
-.bs-sidebar .nav > li > a:focus {
-    border: none;
-    border-left: 2px solid;
-}
-
-.bs-sidebar .nav > .active > a,
-.bs-sidebar .nav > .active:hover > a,
-.bs-sidebar .nav > .active:focus > a {
-    border: none;
-    border-left: 2px solid;
-}
-
-@media (min-width: 992px) {
-    .bs-sidebar.affix {
-        /* top: 60px; */
-        /* bottom: 0px; */
-        top: 80px;
-        bottom: 23px;
-        overflow: auto;
-    }
-}
-
-@media (min-width: 1200px) {
-    .bs-sidebar.affix-bottom,
-    .bs-sidebar.affix {
-        width: 280px;
-    }
-
-    .container > .col-md-9 {
-        padding-left: 40px;
-    }
-}
-
-.md-typeset .md-typeset__table {
-    width:100%;
-}
-
-
+/* make h1 titles more visible and add a bottom separator line */
 .md-typeset h1 {
-    font-size: 32px;
     font-weight: 500;
-    line-height: 1.5;
     color: black;
     border-bottom:3px solid #CCC;
-    padding-bottom:3px;
 }
 
+/* make h2 titles more visible and add a top separator line */
 .md-typeset h2 {
-    font-family: Content-font, Roboto, sans-serif;
     font-weight: 400;
     color: black;
     border-top:1px solid #CCC;
     padding-top:3px;
 }
 
-.md-sidebar--primary {
-    background-color: rgb(247, 250, 248);
-    border-right: 1px solid rgb(230, 230, 230);
-    padding-top: 5em;
-}
-
-.md-sidebar--secondary {
-    padding-left: 3em;
-    padding-top: 5em;
-    margin-right: 15em;
-}
-
+/* Remove space between the header and the content */
 .md-main__inner {
-   margin-top: 0;
-   margin-left: 0;
-}
+    margin-top: 0;
+ }
 
-
-.md-grid {
-    max-width: 100rem;
-}
+/* Place a bottom border line to split the header from the body */
 .md-header {
     border-bottom:1px solid rgb(230, 230, 230);
 }
 
+/* Use the full width instead for the inner portion */
+.md-grid {
+    max-width: 100%;
+}
+
+/************** side/nativation bar adjustments ****************/
+
+/* change the right sidebar background color to different it from the content,
+add a right border line */
+.md-sidebar--primary {
+    background-color: rgb(247, 250, 248);
+    border-right: 1px solid rgb(230, 230, 230);
+    padding-top: 3em;
+}
+
+
+/* Differentiate the (collapsable) group titles */
 .md-nav__item--nested>.md-nav__link {
     margin-top: 1rem;
     color: rgb(168, 168, 168);
     font-weight: bold;
 }
 
-.md-sidebar__inner>.md-nav--secondary {
-    border-left: 1px double rgb(230, 230, 230);
-    width: 10rem;
-}
-
+/* Add padding to be filled with the backgroun color for the active/hover color effect */
 .md-nav__link {
     margin-top: 0px;
     padding: 5px 5px 5px 5px;
 }
 
+/* mark the active topic with a bordered white box */
 .md-nav__link--active {
-    color: rgb(27, 171, 207);
     background-color: white;
     border: 1px double rgb(230, 230, 230);
 }
 
+/* mark on hovr items with a light gray box */
 .md-nav__link:hover {
-    background-color:rgb(212, 212, 212);
+    background-color:rgb(240, 240, 240);
+}
+
+/* place a right border on the left sidebar elements to split them from the content */
+.md-sidebar__inner>.md-nav--secondary {
+    border-left: 1px double rgb(230, 230, 230);
+    width: 10rem;
+}
+
+/* align the footer tex to the center */
+.md-footer-copyright {
+    width: 100%;
+    text-align: center;
 }
